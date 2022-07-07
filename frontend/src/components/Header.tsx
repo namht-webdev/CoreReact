@@ -1,7 +1,9 @@
 import React from 'react';
 
-export const Header = () => (
+const Header: React.FC = () => (
   <div>
     <a href="./">Q & A</a>
   </div>
 );
+
+export default Header;

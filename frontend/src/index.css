@@ -1,18 +1,15 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  background-color: #f7f8fa;
+  }
 
 
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .header{
+    @apply fixed box-border top-0 w-full flex items-center justify-between px-20 py-10 bg-[#fff] border-b-gray-800 border-b-[1px] shadow-[0_3px_7px_0_rgba(110,112,114,0.21)];
+  }
 }

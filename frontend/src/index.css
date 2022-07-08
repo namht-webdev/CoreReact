@@ -12,4 +12,13 @@ body {
   .header{
     @apply fixed box-border top-0 w-full flex items-center justify-between px-20 py-10 bg-[#fff] border-b-gray-800 border-b-[1px] shadow-[0_3px_7px_0_rgba(110,112,114,0.21)];
   }
+  .search-box{
+    @apply border p-1 rounded focus:outline-gray-400 box-border font-body text-[16px] py-3 px-2 text-[#5c5a5a] bg-white w-[200px] h-[30px];
+  }
+  .sign-in{
+    @apply font-body text-[16px] py-[5px] px-[10px] cursor-pointer focus:outline-[#e3e2e2] flex;
+  }
+  .sign-in span{
+    @apply ml-[10px];
+  }
 }

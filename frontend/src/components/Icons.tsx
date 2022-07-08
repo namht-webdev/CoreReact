@@ -1,5 +1,5 @@
 import React from 'react';
 
 export const UserIcon = () => (
-  <img src="/imgs/user.svg" alt="User" width="16px" />
+  <img className="w-3 opacity-[0.6]" src="/imgs/user.svg" alt="User" />
 );

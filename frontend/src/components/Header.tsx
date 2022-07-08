@@ -2,15 +2,13 @@ import React from 'react';
 import { UserIcon } from './Icons';
 export const Header = () => (
   <div className="header">
-    <a href="./">Q & A</a>
-    <input
-      className="border p-1 rounded focus:outline-gray-400"
-      type="text"
-      placeholder="Search..."
-    />
-    <a className="flex justify-between" href="./signin">
+    <a className="text-[24px] font-bold text-[#383737]" href="./">
+      Q & A
+    </a>
+    <input className="search-box" type="text" placeholder="Search..." />
+    <a className="sign-in" href="./signin">
       <UserIcon />
-      <span className="px-3">Sign In</span>
+      <span>Sign In</span>
     </a>
   </div>
 );

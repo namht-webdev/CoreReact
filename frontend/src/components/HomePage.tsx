@@ -1,13 +1,15 @@
-import React from 'react';
 import { PrimaryButton } from './PrimaryButton';
+import { QuestionList } from './QuestionList';
+import { getUnansweredQuestions } from '../interfaces/QuestionsData';
+import { Page } from './Page';
+import { PageTitle } from './PageTitle';
 
 export const HomePage = () => (
-  <div className="mt-14 ml-auto mr-auto mb-5 max-w-[600px]  py-8 px5">
+  <Page>
     <div className="flex items-center justify-between">
-      <h2 className="text-[15px] font-bold mt-3 ml-0 mb-5 text-center uppercase">
-        Unanswered Questions
-      </h2>
+      <PageTitle>Unanswered Questions</PageTitle>
       <PrimaryButton>Ask a question</PrimaryButton>
     </div>
-  </div>
+    <QuestionList data={getUnansweredQuestions()} />
+  </Page>
 );

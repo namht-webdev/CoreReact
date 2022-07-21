@@ -2,3 +2,27 @@ npx create-react-app my-app --template typescript
 
 npm install prettier --save-dev
 npm install eslint-config-prettier eslint-plugin-prettier --save-dev
+npm install -D tailwindcss
+npx tailwindcss init
+
+////////////////////////////
+## tailwind.config.js
+
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+## index.css/global.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/////////////////////////////////////
+
+
+npm install react-router-dom
+npm install @types/react-router-dom --save-dev

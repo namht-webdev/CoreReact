@@ -16,6 +16,38 @@ module.exports = {
   plugins: [],
 }
 
+## folder: .vscode => setting.json
+
+{
+  "eslint.validate": [
+  "javascript",
+  "javascriptreact",
+  { "language": "typescript", "autoFix": true },
+  { "language": "typescriptreact", "autoFix": true }
+  ],
+  "editor.formatOnSave": true
+}
+
+## .eslintrc.json
+
+{
+  "extends": "react-app",
+  "plugins": ["prettier"],
+  "rules": {
+  "prettier/prettier": "error"
+  }
+}
+
+## .prettierrc
+
+{
+  "printWidth": 80,
+  "singleQuote": true,
+  "semi": true,
+  "tabWidth": 2,
+  "trailingComma": "all"
+}
+
 ## index.css/global.css
 @tailwind base;
 @tailwind components;

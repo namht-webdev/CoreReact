@@ -29,12 +29,18 @@ module.exports = {
 }
 
 ## .eslintrc.json
-
 {
-  "extends": "react-app",
+  "extends": ["react-app", "prettier"],
   "plugins": ["prettier"],
   "rules": {
-  "prettier/prettier": "error"
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "parser": "flow",
+        "endOfLine": "auto"
+      }
+    ]
   }
 }
 
